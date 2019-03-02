@@ -1,0 +1,4 @@
+/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/doomer/projects/qt/json_tree
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/doomer/projects/qt/json_tree/cmake-build-debug
