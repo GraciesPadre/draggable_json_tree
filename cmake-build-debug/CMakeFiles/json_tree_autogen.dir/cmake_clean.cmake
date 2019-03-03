@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "json_tree_test_autogen"
+  "CMakeFiles/json_tree_test_autogen.dir/AutogenOldSettings.txt"
   "json_tree_autogen"
   "CMakeFiles/json_tree_autogen.dir/AutogenOldSettings.txt"
   "CMakeFiles/json_tree_autogen"

@@ -6,6 +6,7 @@ CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: json_tree_aut
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: ../pet_tree_item.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: ../pet_tree_model.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/QAbstractItemModel
+CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/QJsonValue
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/QString
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qabstractitemmodel.h
@@ -35,6 +36,7 @@ CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qhashfunctions.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qiodevice.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qiterator.h
+CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qjsonvalue.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qlist.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qlocale.h
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qlogging.h
@@ -76,6 +78,7 @@ CMakeFiles/json_tree.dir/main.cpp.o: ../pet_tree_item.h
 CMakeFiles/json_tree.dir/main.cpp.o: ../pet_tree_model.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QAbstractItemModel
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QDebug
+CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QJsonValue
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QString
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qabstractitemmodel.h
@@ -111,6 +114,7 @@ CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qhashfunctions.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qiodevice.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qitemselectionmodel.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qiterator.h
+CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qjsonvalue.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qline.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qlist.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qlocale.h
@@ -285,6 +289,7 @@ CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QDataStre
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QFile
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QJsonDocument
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QJsonObject
+CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QJsonValue
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QMimeData
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: /usr/include/qt5/QtCore/QString

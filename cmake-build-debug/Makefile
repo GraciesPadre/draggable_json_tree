@@ -56,16 +56,41 @@ CMAKE_BINARY_DIR = /home/doomer/projects/qt/json_tree/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +102,27 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/doomer/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named json_tree_test
+
+# Build rule for target.
+json_tree_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 json_tree_test
+.PHONY : json_tree_test
+
+# fast build rule for target.
+json_tree_test/fast:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/build
+.PHONY : json_tree_test/fast
+
+#=============================================================================
 # Target rules for targets named json_tree
 
 # Build rule for target.
@@ -124,6 +183,19 @@ json_tree/fast:
 .PHONY : json_tree/fast
 
 #=============================================================================
+# Target rules for targets named json_tree_test_autogen
+
+# Build rule for target.
+json_tree_test_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 json_tree_test_autogen
+.PHONY : json_tree_test_autogen
+
+# fast build rule for target.
+json_tree_test_autogen/fast:
+	$(MAKE) -f CMakeFiles/json_tree_test_autogen.dir/build.make CMakeFiles/json_tree_test_autogen.dir/build
+.PHONY : json_tree_test_autogen/fast
+
+#=============================================================================
 # Target rules for targets named json_tree_autogen
 
 # Build rule for target.
@@ -135,6 +207,58 @@ json_tree_autogen: cmake_check_build_system
 json_tree_autogen/fast:
 	$(MAKE) -f CMakeFiles/json_tree_autogen.dir/build.make CMakeFiles/json_tree_autogen.dir/build
 .PHONY : json_tree_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f googletest-build/googlemock/CMakeFiles/gmock.dir/build.make googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 json_tree_autogen/mocs_compilation.o: json_tree_autogen/mocs_compilation.cpp.o
 
@@ -162,6 +286,33 @@ json_tree_autogen/mocs_compilation.s: json_tree_autogen/mocs_compilation.cpp.s
 json_tree_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.s
 .PHONY : json_tree_autogen/mocs_compilation.cpp.s
+
+json_tree_test_autogen/mocs_compilation.o: json_tree_test_autogen/mocs_compilation.cpp.o
+
+.PHONY : json_tree_test_autogen/mocs_compilation.o
+
+# target to build an object file
+json_tree_test_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/json_tree_test_autogen/mocs_compilation.cpp.o
+.PHONY : json_tree_test_autogen/mocs_compilation.cpp.o
+
+json_tree_test_autogen/mocs_compilation.i: json_tree_test_autogen/mocs_compilation.cpp.i
+
+.PHONY : json_tree_test_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+json_tree_test_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/json_tree_test_autogen/mocs_compilation.cpp.i
+.PHONY : json_tree_test_autogen/mocs_compilation.cpp.i
+
+json_tree_test_autogen/mocs_compilation.s: json_tree_test_autogen/mocs_compilation.cpp.s
+
+.PHONY : json_tree_test_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+json_tree_test_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/json_tree_test_autogen/mocs_compilation.cpp.s
+.PHONY : json_tree_test_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 
@@ -196,6 +347,7 @@ pet_tree_item.o: pet_tree_item.cpp.o
 
 # target to build an object file
 pet_tree_item.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_item.cpp.o
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.o
 .PHONY : pet_tree_item.cpp.o
 
@@ -205,6 +357,7 @@ pet_tree_item.i: pet_tree_item.cpp.i
 
 # target to preprocess a source file
 pet_tree_item.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_item.cpp.i
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.i
 .PHONY : pet_tree_item.cpp.i
 
@@ -214,6 +367,7 @@ pet_tree_item.s: pet_tree_item.cpp.s
 
 # target to generate assembly for a file
 pet_tree_item.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_item.cpp.s
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.s
 .PHONY : pet_tree_item.cpp.s
 
@@ -244,19 +398,59 @@ pet_tree_model.cpp.s:
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.s
 .PHONY : pet_tree_model.cpp.s
 
+test_main.o: test_main.cpp.o
+
+.PHONY : test_main.o
+
+# target to build an object file
+test_main.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/test_main.cpp.o
+.PHONY : test_main.cpp.o
+
+test_main.i: test_main.cpp.i
+
+.PHONY : test_main.i
+
+# target to preprocess a source file
+test_main.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/test_main.cpp.i
+.PHONY : test_main.cpp.i
+
+test_main.s: test_main.cpp.s
+
+.PHONY : test_main.s
+
+# target to generate assembly for a file
+test_main.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/test_main.cpp.s
+.PHONY : test_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... json_tree_test"
 	@echo "... json_tree"
+	@echo "... install"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... json_tree_test_autogen"
 	@echo "... json_tree_autogen"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... json_tree_autogen/mocs_compilation.o"
 	@echo "... json_tree_autogen/mocs_compilation.i"
 	@echo "... json_tree_autogen/mocs_compilation.s"
+	@echo "... json_tree_test_autogen/mocs_compilation.o"
+	@echo "... json_tree_test_autogen/mocs_compilation.i"
+	@echo "... json_tree_test_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -266,6 +460,9 @@ help:
 	@echo "... pet_tree_model.o"
 	@echo "... pet_tree_model.i"
 	@echo "... pet_tree_model.s"
+	@echo "... test_main.o"
+	@echo "... test_main.i"
+	@echo "... test_main.s"
 .PHONY : help
 
 
