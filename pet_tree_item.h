@@ -27,18 +27,15 @@ public:
     void swapChildren(int oldRow, int newRow) { m_children.swap(oldRow, newRow); }
     PetTreeItem* takeChild(int row);
 
-    static PetTreeItem* load(const QJsonValue& value);
+    static PetTreeItem* load(const QJsonValue& value, PetTreeItem *parent = nullptr);
 
     friend std::ostream& operator<< (std::ostream &out, const PetTreeItem &item);
 
 private:
-    static PetTreeItem* load(const QJsonValue& value, PetTreeItem *parent);
-
     QString m_name;
     QString m_breed;
     PetTreeItem *m_parent;
     QList<PetTreeItem*> m_children;
-    QString m_filename;
 };
 
 #endif

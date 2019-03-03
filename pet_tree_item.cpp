@@ -18,31 +18,23 @@ PetTreeItem* PetTreeItem::takeChild(int row) {
     return item;
 }
 
-PetTreeItem* PetTreeItem::load(const QJsonValue &value) {
-    auto *rootItem = new PetTreeItem();
-    rootItem->setName("hidden root");
+PetTreeItem* PetTreeItem::load(const QJsonValue &value, PetTreeItem *parent) {
+    auto *newItem = new PetTreeItem(parent);
+    newItem->setName("hidden root");
 
-    if (value.isObject()) {
-        for (const auto &key : value.toObject().keys()) {
-            auto node = new PetTreeItem(rootItem);
-            node->setName(key);
-
-            auto subValue = value.toObject().value(key);
-            load(subValue, node);
+    if ( value.isObject())
+    {
+        auto jsonObject = value.toObject();
+        for (const auto &key : jsonObject.keys()){
+            QJsonValue subValue = value.toObject().value(key);
+            auto *child = load(subValue,newItem);
+            child->setName(key);
         }
+    } else {
+        newItem->setBreed(value.toVariant().toString());
     }
 
-    return rootItem;
-}
-
-PetTreeItem* PetTreeItem::load(const QJsonValue& value, PetTreeItem *parent) {
-    auto jsonObject = value.toObject();
-
-    for (const auto &key : jsonObject.keys()) {
-        new PetTreeItem(parent, key, jsonObject.value(key).toString());
-    }
-
-    return parent;
+    return newItem;
 }
 
 std::ostream& operator<< (std::ostream &out, const PetTreeItem &item) {
