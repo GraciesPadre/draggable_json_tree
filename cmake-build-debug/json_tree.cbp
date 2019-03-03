@@ -118,6 +118,24 @@
 		<Unit filename="/home/doomer/projects/qt/json_tree/main.cpp">
 			<Option target="json_tree"/>
 		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/pet_tree_item.cpp">
+			<Option target="json_tree"/>
+		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/pet_tree_item.h">
+			<Option target="json_tree"/>
+		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/pet_tree_model.cpp">
+			<Option target="json_tree"/>
+		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/pet_tree_model.h">
+			<Option target="json_tree"/>
+		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/qjsonmodel.cpp">
+			<Option target="json_tree"/>
+		</Unit>
+		<Unit filename="/home/doomer/projects/qt/json_tree/qjsonmodel.h">
+			<Option target="json_tree"/>
+		</Unit>
 		<Unit filename="/home/doomer/projects/qt/json_tree/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -190,6 +190,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pet_tree_item.o: pet_tree_item.cpp.o
+
+.PHONY : pet_tree_item.o
+
+# target to build an object file
+pet_tree_item.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.o
+.PHONY : pet_tree_item.cpp.o
+
+pet_tree_item.i: pet_tree_item.cpp.i
+
+.PHONY : pet_tree_item.i
+
+# target to preprocess a source file
+pet_tree_item.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.i
+.PHONY : pet_tree_item.cpp.i
+
+pet_tree_item.s: pet_tree_item.cpp.s
+
+.PHONY : pet_tree_item.s
+
+# target to generate assembly for a file
+pet_tree_item.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_item.cpp.s
+.PHONY : pet_tree_item.cpp.s
+
+pet_tree_model.o: pet_tree_model.cpp.o
+
+.PHONY : pet_tree_model.o
+
+# target to build an object file
+pet_tree_model.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.o
+.PHONY : pet_tree_model.cpp.o
+
+pet_tree_model.i: pet_tree_model.cpp.i
+
+.PHONY : pet_tree_model.i
+
+# target to preprocess a source file
+pet_tree_model.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.i
+.PHONY : pet_tree_model.cpp.i
+
+pet_tree_model.s: pet_tree_model.cpp.s
+
+.PHONY : pet_tree_model.s
+
+# target to generate assembly for a file
+pet_tree_model.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.s
+.PHONY : pet_tree_model.cpp.s
+
+qjsonmodel.o: qjsonmodel.cpp.o
+
+.PHONY : qjsonmodel.o
+
+# target to build an object file
+qjsonmodel.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.o
+.PHONY : qjsonmodel.cpp.o
+
+qjsonmodel.i: qjsonmodel.cpp.i
+
+.PHONY : qjsonmodel.i
+
+# target to preprocess a source file
+qjsonmodel.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.i
+.PHONY : qjsonmodel.cpp.i
+
+qjsonmodel.s: qjsonmodel.cpp.s
+
+.PHONY : qjsonmodel.s
+
+# target to generate assembly for a file
+qjsonmodel.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.s
+.PHONY : qjsonmodel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,6 +287,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pet_tree_item.o"
+	@echo "... pet_tree_item.i"
+	@echo "... pet_tree_item.s"
+	@echo "... pet_tree_model.o"
+	@echo "... pet_tree_model.i"
+	@echo "... pet_tree_model.s"
+	@echo "... qjsonmodel.o"
+	@echo "... qjsonmodel.i"
+	@echo "... qjsonmodel.s"
 .PHONY : help
 
 

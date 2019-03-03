@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/doomer/projects/qt/json_tree/cmake-build-debug
 CMakeFiles/json_tree.dir/all: CMakeFiles/json_tree_autogen.dir/all
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/depend
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target json_tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target json_tree"
 .PHONY : CMakeFiles/json_tree.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/json_tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/json_tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/json_tree.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/json_tree.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/json_tree.dir/clean
 CMakeFiles/json_tree_autogen.dir/all:
 	$(MAKE) -f CMakeFiles/json_tree_autogen.dir/build.make CMakeFiles/json_tree_autogen.dir/depend
 	$(MAKE) -f CMakeFiles/json_tree_autogen.dir/build.make CMakeFiles/json_tree_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=4 "Built target json_tree_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=7 "Built target json_tree_autogen"
 .PHONY : CMakeFiles/json_tree_autogen.dir/all
 
 # Build rule for subdir invocation for target.
