@@ -4,7 +4,6 @@
 #include <QFile>
 #include <QtCore/QDataStream>
 #include <QtCore/QStringListModel>
-#include <iostream>
 #include "pet_tree_model.h"
 
 namespace {
@@ -31,7 +30,6 @@ QVariant PetTreeModel::data(const QModelIndex &index, int role) const {
     }
 
     if (PetTreeItem *item = itemForIndex(index)) {
-        std::cout << "PetTreeModel::data" << *item << '\n';
         if (role == Qt::DisplayRole || role == Qt::EditRole) {
             switch (index.column()) {
                 case Name: return item->name();
@@ -135,80 +133,6 @@ bool PetTreeModel::setData(const QModelIndex &index, const QVariant &value, int 
     return false;
 }
 
-bool PetTreeModel::insertRows(int row, int count, const QModelIndex &parent) {
-    /*if ( ! m_rootItem) {
-        m_rootItem = new PetTreeItem;
-    }
-
-    PetTreeItem *parentItem = parent.isValid() ? itemForIndex(parent) : m_rootItem;
-
-    std::cout << parentItem << '\n';
-
-    beginInsertRows(parent, row, row + count - 1);
-
-    for (int i = 0; i < count; ++i) {
-        PetTreeItem *item = new PetTreeItem(nullptr, tr("New Pet"), "Gracie");
-        parentItem->insertChild(row, item);
-    }
-    endInsertRows();
-
-    return true;
-     */
-    /*
-    PetTreeItem *parentItem = m_rootItem;
-
-    if (parent.isValid()) {
-        PetTreeItem *item = static_cast<PetTreeItem*>(parent.internalPointer());
-        if (item)
-            parentItem = item;
-    }
-
-    bool success;
-
-    beginInsertRows(parent, row, row + count - 1);
-    parentItem->
-    success = parentItem->insertChildren(row, count, m_rootItem->columnCount());
-    endInsertRows();
-     */
-
-    /*
-     * bool TreeItem::insertChildren(int position, int count, int columns)
-{
-    if (position < 0 || position > childItems.size())
-        return false;
-
-    for (int row = 0; row < count; ++row) {
-        QVector<QVariant> data(columns);
-        TreeItem *item = new TreeItem(data, this);
-        childItems.insert(position, item);
-    }
-
-    return true;
-}
-
-
-    return success;
-
-    if ( ! m_rootItem) {
-        m_rootItem = new PetTreeItem;
-    }
-
-    PetTreeItem *parentItem = parent.isValid() ? itemForIndex(parent) : m_rootItem;
-
-    std::cout << parentItem << '\n';
-
-    beginInsertRows(parent, row, row + count - 1);
-
-    for (int i = 0; i < count; ++i) {
-        PetTreeItem *item = new PetTreeItem(nullptr, tr("New Pet"), "Gracie");
-        parentItem->insertChild(row, item);
-    }
-    endInsertRows();
-*/
-    return true;
-
-}
-
 bool PetTreeModel::removeRows(int row, int count, const QModelIndex &parent) {
     if ( ! m_rootItem) {
         return false;
@@ -240,7 +164,6 @@ QMimeData* PetTreeModel::mimeData(const QModelIndexList &indexes) const {
     for (QModelIndex index : indexes) {
         if (index.isValid()) {
             QString text = data(index, Qt::DisplayRole).toString();
-            std::cout << "mimeData text" << text.toStdString() << '\n';
             stream << text;
         }
     }
@@ -250,45 +173,43 @@ QMimeData* PetTreeModel::mimeData(const QModelIndexList &indexes) const {
 }
 
 bool PetTreeModel::dropMimeData(const QMimeData *mimeData, Qt::DropAction action, int row, int column, const QModelIndex &parent) {
+    bool success = false;
+
     if (action == Qt::IgnoreAction) {
         return true;
     }
-
-    if ( ! mimeData->hasFormat(MimeType)) {
+    if (action != Qt::MoveAction || column > 0 || !mimeData || !mimeData->hasFormat(MimeType)) {
         return false;
-    }
-
-    if (column > 0) {
-        return false;
-    }
-
-    int position;
-
-    if (row != -1) {
-        position = row;
-    } else if (parent.isValid()) {
-        position = parent.row();
-    } else {
-        position = rowCount(QModelIndex());
     }
 
     QByteArray encodedData = mimeData->data(MimeType);
     QDataStream stream(&encodedData, QIODevice::ReadOnly);
 
-    /* Retrieve row id */
-    QList<int> rowIdList;
-    while (!stream.atEnd()) {
-        QString text;
-        stream >> text;
-        rowIdList << text.toInt();
-    }
-
-    /* Insert rows (one by one) */
-            foreach(int rowId, rowIdList) {
-            insertRow(position, parent);
+    if (auto *parentItem = itemForIndex(parent)) {
+        QList<QString> decodedMimeData;
+        while (!stream.atEnd()) {
+            QString text;
+            stream >> text;
+            decodedMimeData << text;
         }
 
-    return true;
+        if (decodedMimeData.count() >= 2) {
+            auto *newItem = new PetTreeItem();
+            newItem->setName(decodedMimeData.at(0));
+            newItem->setBreed(decodedMimeData.at(1));
+            parentItem->addChild(newItem);
+
+            if (row == -1) {
+                row = parent.isValid() ? parent.row() : m_rootItem->childCount();
+            }
+
+            beginInsertRows(parent, row, row);
+            success = true;
+            endInsertRows();
+        }
+    }
+
+    return success;
 }
 
 QModelIndex PetTreeModel::moveUp(const QModelIndex &index) {

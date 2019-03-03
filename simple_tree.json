@@ -1,0 +1,12 @@
+{
+	"dogs": {
+		"Buttons": "Terrier",
+		"Shasta": "Eskimo"
+	},
+
+	"rabbits": {
+		"Twitch": "Dutch Belted",
+		"Nibbles": "Dutch Belted",
+		"Marbles": "Mini Hotot"
+	}
+}

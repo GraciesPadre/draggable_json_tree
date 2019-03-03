@@ -25,7 +25,6 @@ public:
     bool setHeaderData(int, Qt::Orientation, const QVariant&, int=Qt::EditRole) { return false; }
     bool setData(const QModelIndex &index, const QVariant &value, int role=Qt::EditRole);
 
-    bool insertRows(int row, int count, const QModelIndex &parent=QModelIndex());
     bool removeRows(int row, int count, const QModelIndex &parent=QModelIndex());
 
     Qt::DropActions supportedDragActions() const { return Qt::MoveAction; }

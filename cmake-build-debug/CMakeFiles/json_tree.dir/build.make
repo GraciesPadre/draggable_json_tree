@@ -70,22 +70,9 @@ CMakeFiles/json_tree.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json_tree.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doomer/projects/qt/json_tree/main.cpp -o CMakeFiles/json_tree.dir/main.cpp.s
 
-CMakeFiles/json_tree.dir/qjsonmodel.cpp.o: CMakeFiles/json_tree.dir/flags.make
-CMakeFiles/json_tree.dir/qjsonmodel.cpp.o: ../qjsonmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/json_tree.dir/qjsonmodel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json_tree.dir/qjsonmodel.cpp.o -c /home/doomer/projects/qt/json_tree/qjsonmodel.cpp
-
-CMakeFiles/json_tree.dir/qjsonmodel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json_tree.dir/qjsonmodel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doomer/projects/qt/json_tree/qjsonmodel.cpp > CMakeFiles/json_tree.dir/qjsonmodel.cpp.i
-
-CMakeFiles/json_tree.dir/qjsonmodel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json_tree.dir/qjsonmodel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doomer/projects/qt/json_tree/qjsonmodel.cpp -o CMakeFiles/json_tree.dir/qjsonmodel.cpp.s
-
 CMakeFiles/json_tree.dir/pet_tree_item.cpp.o: CMakeFiles/json_tree.dir/flags.make
 CMakeFiles/json_tree.dir/pet_tree_item.cpp.o: ../pet_tree_item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/json_tree.dir/pet_tree_item.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/json_tree.dir/pet_tree_item.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json_tree.dir/pet_tree_item.cpp.o -c /home/doomer/projects/qt/json_tree/pet_tree_item.cpp
 
 CMakeFiles/json_tree.dir/pet_tree_item.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/json_tree.dir/pet_tree_item.cpp.s: cmake_force
 
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: CMakeFiles/json_tree.dir/flags.make
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.o: ../pet_tree_model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/json_tree.dir/pet_tree_model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/json_tree.dir/pet_tree_model.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json_tree.dir/pet_tree_model.cpp.o -c /home/doomer/projects/qt/json_tree/pet_tree_model.cpp
 
 CMakeFiles/json_tree.dir/pet_tree_model.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/json_tree.dir/pet_tree_model.cpp.s: cmake_force
 
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: CMakeFiles/json_tree.dir/flags.make
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o: json_tree_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o -c /home/doomer/projects/qt/json_tree/cmake-build-debug/json_tree_autogen/mocs_compilation.cpp
 
 CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.i: cmake_force
@@ -125,7 +112,6 @@ CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.s: cmake_force
 # Object files for target json_tree
 json_tree_OBJECTS = \
 "CMakeFiles/json_tree.dir/main.cpp.o" \
-"CMakeFiles/json_tree.dir/qjsonmodel.cpp.o" \
 "CMakeFiles/json_tree.dir/pet_tree_item.cpp.o" \
 "CMakeFiles/json_tree.dir/pet_tree_model.cpp.o" \
 "CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o"
@@ -134,7 +120,6 @@ json_tree_OBJECTS = \
 json_tree_EXTERNAL_OBJECTS =
 
 json_tree: CMakeFiles/json_tree.dir/main.cpp.o
-json_tree: CMakeFiles/json_tree.dir/qjsonmodel.cpp.o
 json_tree: CMakeFiles/json_tree.dir/pet_tree_item.cpp.o
 json_tree: CMakeFiles/json_tree.dir/pet_tree_model.cpp.o
 json_tree: CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o
@@ -143,7 +128,7 @@ json_tree: /usr/lib64/libQt5Widgets.so.5.9.2
 json_tree: /usr/lib64/libQt5Gui.so.5.9.2
 json_tree: /usr/lib64/libQt5Core.so.5.9.2
 json_tree: CMakeFiles/json_tree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable json_tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable json_tree"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/json_tree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

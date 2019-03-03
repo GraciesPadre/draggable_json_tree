@@ -244,33 +244,6 @@ pet_tree_model.cpp.s:
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.s
 .PHONY : pet_tree_model.cpp.s
 
-qjsonmodel.o: qjsonmodel.cpp.o
-
-.PHONY : qjsonmodel.o
-
-# target to build an object file
-qjsonmodel.cpp.o:
-	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.o
-.PHONY : qjsonmodel.cpp.o
-
-qjsonmodel.i: qjsonmodel.cpp.i
-
-.PHONY : qjsonmodel.i
-
-# target to preprocess a source file
-qjsonmodel.cpp.i:
-	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.i
-.PHONY : qjsonmodel.cpp.i
-
-qjsonmodel.s: qjsonmodel.cpp.s
-
-.PHONY : qjsonmodel.s
-
-# target to generate assembly for a file
-qjsonmodel.cpp.s:
-	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/qjsonmodel.cpp.s
-.PHONY : qjsonmodel.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -293,9 +266,6 @@ help:
 	@echo "... pet_tree_model.o"
 	@echo "... pet_tree_model.i"
 	@echo "... pet_tree_model.s"
-	@echo "... qjsonmodel.o"
-	@echo "... qjsonmodel.i"
-	@echo "... qjsonmodel.s"
 .PHONY : help
 
 

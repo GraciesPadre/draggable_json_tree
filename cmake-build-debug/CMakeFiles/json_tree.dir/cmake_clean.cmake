@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "json_tree_autogen"
   "CMakeFiles/json_tree_autogen.dir/AutogenOldSettings.txt"
   "CMakeFiles/json_tree.dir/main.cpp.o"
-  "CMakeFiles/json_tree.dir/qjsonmodel.cpp.o"
   "CMakeFiles/json_tree.dir/pet_tree_item.cpp.o"
   "CMakeFiles/json_tree.dir/pet_tree_model.cpp.o"
   "CMakeFiles/json_tree.dir/json_tree_autogen/mocs_compilation.cpp.o"

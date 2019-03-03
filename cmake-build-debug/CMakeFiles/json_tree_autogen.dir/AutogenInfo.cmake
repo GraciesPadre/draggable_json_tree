@@ -11,8 +11,8 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/home/doomer/projects/qt/json_tree/cmake-build-debug/json_tree_autogen")
 set(AM_INCLUDE_DIR "/home/doomer/projects/qt/json_tree/cmake-build-debug/json_tree_autogen/include")
 # Files
-set(AM_SOURCES "/home/doomer/projects/qt/json_tree/main.cpp;/home/doomer/projects/qt/json_tree/pet_tree_item.cpp;/home/doomer/projects/qt/json_tree/pet_tree_model.cpp;/home/doomer/projects/qt/json_tree/qjsonmodel.cpp")
-set(AM_HEADERS "/home/doomer/projects/qt/json_tree/pet_tree_model.h;/home/doomer/projects/qt/json_tree/qjsonmodel.h")
+set(AM_SOURCES "/home/doomer/projects/qt/json_tree/main.cpp;/home/doomer/projects/qt/json_tree/pet_tree_item.cpp;/home/doomer/projects/qt/json_tree/pet_tree_model.cpp")
+set(AM_HEADERS "/home/doomer/projects/qt/json_tree/pet_tree_model.h")
 set(AM_SETTINGS_FILE "/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/AutogenOldSettings.txt")
 # Qt
 set(AM_QT_VERSION_MAJOR 5)

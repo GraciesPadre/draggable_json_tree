@@ -8,10 +8,9 @@ using namespace std;
 
 int main(int argc, char **argv) {
     QApplication app(argc, argv);
-
-    // QJsonModel model;
+    
     PetTreeModel model;
-    model.load("/home/doomer/projects/qt/json_tree/simple_tree.json");
+    model.load("/tmp/simple_tree.json");
 
     auto treeView = new QTreeView;
     treeView->setModel(&model);

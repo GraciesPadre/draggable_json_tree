@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/doomer/projects/qt/json_tree/main.cpp" "/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles/json_tree.dir/main.cpp.o"
   "/home/doomer/projects/qt/json_tree/pet_tree_item.cpp" "/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles/json_tree.dir/pet_tree_item.cpp.o"
   "/home/doomer/projects/qt/json_tree/pet_tree_model.cpp" "/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles/json_tree.dir/pet_tree_model.cpp.o"
-  "/home/doomer/projects/qt/json_tree/qjsonmodel.cpp" "/home/doomer/projects/qt/json_tree/cmake-build-debug/CMakeFiles/json_tree.dir/qjsonmodel.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
