@@ -33,13 +33,6 @@ public:
     QMimeData *mimeData(const QModelIndexList &indexes) const;
     bool dropMimeData(const QMimeData *mimeData, Qt::DropAction action, int row, int column, const QModelIndex &parent);
 
-    QModelIndex moveUp(const QModelIndex &index);
-    QModelIndex moveDown(const QModelIndex &index);
-    QModelIndex cut(const QModelIndex &index);
-    QModelIndex paste(const QModelIndex &index);
-    QModelIndex promote(const QModelIndex &index);
-    QModelIndex demote(const QModelIndex &index);
-
     void clear();
 
     QString filename() const { return m_fileName; }

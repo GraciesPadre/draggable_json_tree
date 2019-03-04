@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "pet_tree_item.h"
+#include "pet_tree_model.h"
 #include <QFile>
 #include <QtCore/QJsonDocument>
 #include <QtCore/QJsonObject>
@@ -106,6 +107,18 @@ TEST(PetTreeItemTests, Load) {
     ASSERT_TRUE(rootItem->childAt(0)->childCount() == 2);
     ASSERT_TRUE(rootItem->childAt(1)->childCount() == 3);
     ASSERT_TRUE(rootItem->childAt(2) == nullptr);
+}
+
+TEST(PetTreeModelTests, Load) {
+    PetTreeModel petTreeModel;
+    ASSERT_TRUE(petTreeModel.load("/tmp/simple_tree.json"));
+    ASSERT_TRUE(petTreeModel.hasChildren());
+    ASSERT_TRUE(petTreeModel.rowCount() == 2);
+}
+
+TEST(PetTreeModelTests, LoadFails) {
+    PetTreeModel petTreeModel;
+    ASSERT_FALSE(petTreeModel.load("/path/to/non/existent/file"));
 }
 
 int main(int argc, char **argv) {

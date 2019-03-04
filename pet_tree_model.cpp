@@ -212,19 +212,6 @@ bool PetTreeModel::dropMimeData(const QMimeData *mimeData, Qt::DropAction action
     return success;
 }
 
-QModelIndex PetTreeModel::moveUp(const QModelIndex &index) {
-    if (!index.isValid() || index.row() <= 0) {
-        return index;
-    }
-
-    PetTreeItem *item = itemForIndex(index);
-    Q_ASSERT(item);
-    PetTreeItem *parent = item->parent();
-    Q_ASSERT(parent);
-
-    return moveItem(parent, index.row(), index.row() - 1);
-}
-
 QModelIndex PetTreeModel::moveItem(PetTreeItem *parent, int oldRow,int newRow) {
     Q_ASSERT(0 <= oldRow && oldRow < parent->childCount() && 0 <= newRow && newRow < parent->childCount());
 
@@ -232,138 +219,6 @@ QModelIndex PetTreeModel::moveItem(PetTreeItem *parent, int oldRow,int newRow) {
     QModelIndex oldIndex = createIndex(oldRow, 0, parent->childAt(oldRow));
     QModelIndex newIndex = createIndex(newRow, 0, parent->childAt(newRow));
     emit dataChanged(oldIndex, newIndex);
-
-    return newIndex;
-}
-
-QModelIndex PetTreeModel::moveDown(const QModelIndex &index) {
-    if (!index.isValid()) {
-        return index;
-    }
-
-    PetTreeItem *item = itemForIndex(index);
-    Q_ASSERT(item);
-
-    PetTreeItem *parent = item->parent();
-    int newRow = index.row() + 1;
-
-    if (!parent || parent->childCount() <= newRow) {
-        return index;
-    }
-
-    return moveItem(parent, index.row(), newRow);
-}
-
-QModelIndex PetTreeModel::cut(const QModelIndex &index) {
-    if (!index.isValid()) {
-        return index;
-    }
-
-    delete m_cutItem;
-    m_cutItem = itemForIndex(index);
-    Q_ASSERT(m_cutItem);
-
-
-    PetTreeItem *parent = m_cutItem->parent();
-    Q_ASSERT(parent);
-    int row = parent->rowOfChild(m_cutItem);
-    Q_ASSERT(row == index.row());
-
-    beginRemoveRows(index.parent(), row, row);
-    PetTreeItem *child = parent->takeChild(row);
-    endRemoveRows();
-
-    Q_ASSERT(child == m_cutItem);
-
-    if (row > 0) {
-        --row;
-        return createIndex(row, 0, parent->childAt(row));
-    }
-
-    if (parent != m_rootItem) {
-        PetTreeItem *grandParent = parent->parent();
-        Q_ASSERT(grandParent);
-        return createIndex(grandParent->rowOfChild(parent), 0, parent);
-    }
-
-    return QModelIndex();
-}
-
-QModelIndex PetTreeModel::paste(const QModelIndex &index) {
-    if (!index.isValid() || ! m_cutItem) {
-        return index;
-    }
-
-    PetTreeItem *sibling = itemForIndex(index);
-    Q_ASSERT(sibling);
-
-    PetTreeItem *parent = sibling->parent();
-    Q_ASSERT(parent);
-
-    int row = parent->rowOfChild(sibling) + 1;
-
-    beginInsertRows(index.parent(), row, row);
-    parent->insertChild(row, m_cutItem);
-    PetTreeItem *child = m_cutItem;
-    m_cutItem = nullptr;
-    endInsertRows();
-
-    return createIndex(row, 0, child);
-}
-
-QModelIndex PetTreeModel::promote(const QModelIndex &index) {
-    if (!index.isValid()) {
-        return index;
-    }
-
-    PetTreeItem *item = itemForIndex(index);
-    Q_ASSERT(item);
-    PetTreeItem *parent = item->parent();
-    Q_ASSERT(parent);
-
-    if (parent == m_rootItem) {
-        return index; // Already a top-level item
-    }
-
-    int row = parent->rowOfChild(item);
-    PetTreeItem *child = parent->takeChild(row);
-    Q_ASSERT(child == item);
-    PetTreeItem *grandParent = parent->parent();
-    Q_ASSERT(grandParent);
-
-    row = grandParent->rowOfChild(parent) + 1;
-    grandParent->insertChild(row, child);
-    QModelIndex newIndex = createIndex(row, 0, child);
-
-    emit dataChanged(newIndex, newIndex);
-
-    return newIndex;
-}
-
-QModelIndex PetTreeModel::demote(const QModelIndex &index) {
-    if (!index.isValid()) {
-        return index;
-    }
-
-    PetTreeItem *item = itemForIndex(index);
-    Q_ASSERT(item);
-    PetTreeItem *parent = item->parent();
-    Q_ASSERT(parent);
-
-    int row = parent->rowOfChild(item);
-    if (row == 0) {
-        return index; // No preceding sibling to move this under
-    }
-
-    PetTreeItem *child = parent->takeChild(row);
-    Q_ASSERT(child == item);
-    PetTreeItem *sibling = parent->childAt(row - 1);
-    Q_ASSERT(sibling);
-
-    sibling->addChild(child);
-    QModelIndex newIndex = createIndex(sibling->childCount() - 1, 0, child);
-
-    emit dataChanged(newIndex, newIndex);
 
     return newIndex;
 }
@@ -434,10 +289,12 @@ bool PetTreeModel::readPets() {
     return true;
 }
 
+// TODO: Implement this
 bool PetTreeModel::save(const QString &fileName) {
     return true;
 }
 
+// TODO: Implement this
 bool PetTreeModel::writePets() const {
     return true;
 }

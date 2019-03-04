@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="json_tree_test" targetName="json_tree" />
-      <config projectName="json_tree_test" targetName="json_tree_autogen" />
       <config projectName="json_tree_test" targetName="json_tree_test" />
-      <config projectName="json_tree_test" targetName="gtest" />
       <config projectName="json_tree_test" targetName="gmock_main" />
+      <config projectName="json_tree_test" targetName="json_tree_autogen" />
       <config projectName="json_tree_test" targetName="json_tree_test_autogen" />
+      <config projectName="json_tree_test" targetName="gtest" />
+      <config projectName="json_tree_test" targetName="json_tree" />
       <config projectName="json_tree_test" targetName="gmock" />
       <config projectName="json_tree_test" targetName="gtest_main" />
     </generated>
@@ -20,6 +20,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0f79ca72-1076-44b3-ae48-290b49c855c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_tree_item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_tree_item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_tree_model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_tree_model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_tree_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/pet_tree_model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6435">
-              <caret line="429" column="68" selection-start-line="429" selection-start-column="35" selection-end-line="429" selection-end-column="68" />
+            <state relative-caret-position="203">
+              <caret line="155" column="52" selection-start-line="155" selection-start-column="52" selection-end-line="155" selection-end-column="52" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -46,29 +58,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="15">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="54" column="113" selection-start-line="54" selection-start-column="113" selection-end-line="54" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+            <state relative-caret-position="216">
+              <caret line="120" column="66" selection-start-line="120" selection-start-column="66" selection-end-line="120" selection-end-column="66" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -84,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="375">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="e#57#86#0" expanded="true" />
               </folding>
@@ -94,10 +103,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple_tree.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_item.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="191">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -108,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_item.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="420">
               <caret line="30" column="22" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
@@ -140,7 +158,6 @@
       <find>mime</find>
       <find>::data</find>
       <find>&quot;new</find>
-      <find>insertrows</find>
       <find>std::cout</find>
       <find>take</find>
       <find>mimetypes</find>
@@ -148,6 +165,7 @@
       <find>dropmimi</find>
       <find>insert</find>
       <find>dropmim</find>
+      <find>insertrows</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,13 +177,13 @@
         <option value="$PROJECT_DIR$/qjsonmodel.h" />
         <option value="$PROJECT_DIR$/qjsonmodel.cpp" />
         <option value="$PROJECT_DIR$/simple_tree.json" />
-        <option value="$PROJECT_DIR$/pet_tree_item.cpp" />
-        <option value="$PROJECT_DIR$/pet_tree_model.h" />
-        <option value="$PROJECT_DIR$/pet_tree_model.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/pet_tree_item.h" />
-        <option value="$PROJECT_DIR$/test_main.cpp" />
+        <option value="$PROJECT_DIR$/pet_tree_model.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/pet_tree_item.cpp" />
+        <option value="$PROJECT_DIR$/pet_tree_model.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/test_main.cpp" />
       </list>
     </option>
   </component>
@@ -190,32 +208,6 @@
             <path>
               <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="googletest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="googletest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -283,32 +275,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.PetTreeItemTests.Load">
-    <configuration name="PetTreeItemTests.Children" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="Children" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Application.json_tree_test">
+    <configuration name="PetTreeItemTests.Load" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="Load" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetTreeItemTests.InsertChild" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="InsertChild" TEST_MODE="SUITE_TEST">
+    <configuration name="PetTreeItemTests.SwapChildren" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="SwapChildren" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetTreeItemTests.Load" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="Load" TEST_MODE="SUITE_TEST">
+    <configuration name="PetTreeItemTests.TakeChild" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="TakeChild" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetTreeItemTests.SwapChildren" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="SwapChildren" TEST_MODE="SUITE_TEST">
+    <configuration name="PetTreeModelTests.Load" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeModelTests" TEST_METHOD="Load" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetTreeItemTests.TakeChild" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="TakeChild" TEST_MODE="SUITE_TEST">
+    <configuration name="PetTreeModelTests.LoadFails" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeModelTests" TEST_METHOD="LoadFails" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -355,11 +347,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Google Test.PetTreeItemTests.Children" />
-      <item itemvalue="Google Test.PetTreeItemTests.InsertChild" />
-      <item itemvalue="Google Test.PetTreeItemTests.Load" />
-      <item itemvalue="Google Test.PetTreeItemTests.SwapChildren" />
-      <item itemvalue="Google Test.PetTreeItemTests.TakeChild" />
       <item itemvalue="Application.gmock" />
       <item itemvalue="Application.gmock_main" />
       <item itemvalue="Application.gtest" />
@@ -368,14 +355,19 @@
       <item itemvalue="Application.json_tree_autogen" />
       <item itemvalue="Application.json_tree_test" />
       <item itemvalue="Application.json_tree_test_autogen" />
+      <item itemvalue="Google Test.PetTreeItemTests.Load" />
+      <item itemvalue="Google Test.PetTreeItemTests.SwapChildren" />
+      <item itemvalue="Google Test.PetTreeItemTests.TakeChild" />
+      <item itemvalue="Google Test.PetTreeModelTests.Load" />
+      <item itemvalue="Google Test.PetTreeModelTests.LoadFails" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.PetTreeModelTests.LoadFails" />
+        <item itemvalue="Google Test.PetTreeModelTests.Load" />
         <item itemvalue="Google Test.PetTreeItemTests.Load" />
         <item itemvalue="Google Test.PetTreeItemTests.TakeChild" />
         <item itemvalue="Google Test.PetTreeItemTests.SwapChildren" />
-        <item itemvalue="Google Test.PetTreeItemTests.InsertChild" />
-        <item itemvalue="Google Test.PetTreeItemTests.Children" />
       </list>
     </recent_temporary>
   </component>
@@ -392,19 +384,11 @@
       <workItem from="1551502560785" duration="48666000" />
       <workItem from="1551632542308" duration="17584000" />
       <workItem from="1551657907315" duration="15000" />
+      <workItem from="1551659212812" duration="3132000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PetTreeItemTests_InsertChild - 2019.03.03 at 16h 28m 28s.xml">
-      <configuration name="PetTreeItemTests.InsertChild" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PetTreeItemTests_SwapChildren - 2019.03.03 at 16h 30m 40s.xml">
-      <configuration name="PetTreeItemTests.SwapChildren" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PetTreeItemTests_SwapChildren - 2019.03.03 at 16h 32m 21s.xml">
-      <configuration name="PetTreeItemTests.SwapChildren" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="PetTreeItemTests_TakeChild - 2019.03.03 at 16h 35m 36s.xml">
       <configuration name="PetTreeItemTests.TakeChild" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
@@ -426,16 +410,25 @@
     <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 58m 11s.xml">
       <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="PetTreeModelTests_Load - 2019.03.03 at 20h 23m 43s.xml">
+      <configuration name="PetTreeModelTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeModelTests_Load - 2019.03.03 at 20h 25m 18s.xml">
+      <configuration name="PetTreeModelTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeModelTests_LoadFails - 2019.03.03 at 20h 28m 40s.xml">
+      <configuration name="PetTreeModelTests.LoadFails" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66265000" />
+    <option name="totallyTimeSpent" value="69397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25431034" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.32855093" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32998565" />
@@ -444,7 +437,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.30989957" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32998565" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32998565" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32998565" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4117647" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -486,7 +479,7 @@
       <breakpoints>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/pet_tree_item.cpp</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -516,7 +509,7 @@
         </line-breakpoint>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/pet_tree_model.cpp</url>
-          <line>228</line>
+          <line>215</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
@@ -561,24 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple_tree.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/qt5/QtCore/qjsonvalue.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-183">
           <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/qt5/QtCore/qabstractitemmodel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="345" column="32" selection-start-line="345" selection-start-column="32" selection-end-line="345" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -593,13 +572,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/treemodel.hpp" />
     <entry file="file://$PROJECT_DIR$/treemodel.cpp" />
-    <entry file="file:///usr/include/qt5/QtCore/qlist.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-src/googletest/src/gtest.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -614,53 +586,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6435">
-          <caret line="429" column="68" selection-start-line="429" selection-start-column="35" selection-end-line="429" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt.gtest">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pet_tree_model.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding>
-            <element signature="e#57#86#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pet_tree_item.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="191">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -669,15 +608,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pet_tree_item.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="420">
           <caret line="30" column="22" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_tree.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/qt5/QtCore/qmimedata.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/qt5/QtCore/qlist.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="341" column="15" selection-start-line="341" selection-start-column="15" selection-end-line="342" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="54" column="113" selection-start-line="54" selection-start-column="113" selection-end-line="54" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/qt5/QtCore/qobject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="206" column="30" selection-start-line="206" selection-start-column="30" selection-end-line="206" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pet_tree_model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#57#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/qt5/QtCore/qabstractitemmodel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="155" column="52" selection-start-line="155" selection-start-column="52" selection-end-line="155" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="120" column="66" selection-start-line="120" selection-start-column="66" selection-end-line="120" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

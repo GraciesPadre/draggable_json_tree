@@ -52,7 +52,7 @@ add_executable(json_tree main.cpp pet_tree_item.cpp pet_tree_item.h pet_tree_mod
 target_link_libraries(json_tree Qt5::Core)
 target_link_libraries(json_tree Qt5::Widgets)
 
-add_executable(json_tree_test test_main.cpp pet_tree_item.cpp pet_tree_item.h)
+add_executable(json_tree_test test_main.cpp pet_tree_item.cpp pet_tree_item.h pet_tree_model.cpp pet_tree_model.h)
 target_link_libraries(json_tree_test gtest_main Qt5::Core)
 add_test(NAME json_tree_tests COMMAND json_tree_test)
 

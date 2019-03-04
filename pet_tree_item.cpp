@@ -22,8 +22,7 @@ PetTreeItem* PetTreeItem::load(const QJsonValue &value, PetTreeItem *parent) {
     auto *newItem = new PetTreeItem(parent);
     newItem->setName("hidden root");
 
-    if ( value.isObject())
-    {
+    if ( value.isObject()) {
         auto jsonObject = value.toObject();
         for (const auto &key : jsonObject.keys()){
             QJsonValue subValue = value.toObject().value(key);

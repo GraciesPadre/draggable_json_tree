@@ -377,6 +377,7 @@ pet_tree_model.o: pet_tree_model.cpp.o
 
 # target to build an object file
 pet_tree_model.cpp.o:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_model.cpp.o
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.o
 .PHONY : pet_tree_model.cpp.o
 
@@ -386,6 +387,7 @@ pet_tree_model.i: pet_tree_model.cpp.i
 
 # target to preprocess a source file
 pet_tree_model.cpp.i:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_model.cpp.i
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.i
 .PHONY : pet_tree_model.cpp.i
 
@@ -395,6 +397,7 @@ pet_tree_model.s: pet_tree_model.cpp.s
 
 # target to generate assembly for a file
 pet_tree_model.cpp.s:
+	$(MAKE) -f CMakeFiles/json_tree_test.dir/build.make CMakeFiles/json_tree_test.dir/pet_tree_model.cpp.s
 	$(MAKE) -f CMakeFiles/json_tree.dir/build.make CMakeFiles/json_tree.dir/pet_tree_model.cpp.s
 .PHONY : pet_tree_model.cpp.s
 

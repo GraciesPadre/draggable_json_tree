@@ -78,7 +78,6 @@ CMakeFiles/json_tree.dir/main.cpp.o
  /home/doomer/projects/qt/json_tree/pet_tree_item.h
  /home/doomer/projects/qt/json_tree/pet_tree_model.h
  /usr/include/qt5/QtCore/QAbstractItemModel
- /usr/include/qt5/QtCore/QDebug
  /usr/include/qt5/QtCore/QJsonValue
  /usr/include/qt5/QtCore/QList
  /usr/include/qt5/QtCore/QString
@@ -158,7 +157,6 @@ CMakeFiles/json_tree.dir/main.cpp.o
  /usr/include/qt5/QtCore/qvarlengtharray.h
  /usr/include/qt5/QtCore/qvector.h
  /usr/include/qt5/QtCore/qversiontagging.h
- /usr/include/qt5/QtGui/QDropEvent
  /usr/include/qt5/QtGui/qbrush.h
  /usr/include/qt5/QtGui/qcolor.h
  /usr/include/qt5/QtGui/qcursor.h

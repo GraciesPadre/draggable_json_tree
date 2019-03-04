@@ -77,7 +77,6 @@ CMakeFiles/json_tree.dir/main.cpp.o: ../main.cpp
 CMakeFiles/json_tree.dir/main.cpp.o: ../pet_tree_item.h
 CMakeFiles/json_tree.dir/main.cpp.o: ../pet_tree_model.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QAbstractItemModel
-CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QDebug
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QJsonValue
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/QString
@@ -157,7 +156,6 @@ CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qvariant.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qvector.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtCore/qversiontagging.h
-CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtGui/QDropEvent
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtGui/qbrush.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtGui/qcolor.h
 CMakeFiles/json_tree.dir/main.cpp.o: /usr/include/qt5/QtGui/qcursor.h

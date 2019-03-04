@@ -1,7 +1,5 @@
 #include <QApplication>
-#include <QDebug>
 #include <QtWidgets/QTreeView>
-#include <QDropEvent>
 #include "pet_tree_model.h"
 
 using namespace std;
