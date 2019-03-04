@@ -19,31 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f79ca72-1076-44b3-ae48-290b49c855c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt.gtest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/AutogenInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/AutogenInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/json_tree_autogen.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/json_tree.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/json_tree.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet_tree_item.h" beforeDir="false" afterPath="$PROJECT_DIR$/pet_tree_item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="199" column="42" selection-start-line="199" selection-start-column="42" selection-end-line="199" selection-end-column="42" />
+            <state relative-caret-position="366">
+              <caret line="429" column="68" selection-start-line="429" selection-start-column="35" selection-end-line="429" selection-end-column="68" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -79,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="233">
+              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -91,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+            <state relative-caret-position="216">
+              <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -100,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt.gtest">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -120,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_item.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="137">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -132,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pet_tree_item.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="30" column="85" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="85" />
+            <state relative-caret-position="336">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -188,8 +165,8 @@
         <option value="$PROJECT_DIR$/pet_tree_model.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/pet_tree_item.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test_main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -214,6 +191,32 @@
             <path>
               <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="googletest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="json_tree_test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="googletest-src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="googletest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -281,8 +284,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.json_tree_test">
-    <configuration name="PetTreeItemTests.RowFor1Child" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="RowFor1Child" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.PetTreeItemTests.Load">
+    <configuration name="PetTreeItemTests.Children" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="Children" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTreeItemTests.InsertChild" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="InsertChild" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTreeItemTests.Load" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="Load" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTreeItemTests.SwapChildren" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="SwapChildren" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetTreeItemTests.TakeChild" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="json_tree_test" TARGET_NAME="json_tree_test" RUN_TARGET_PROJECT_NAME="json_tree_test" RUN_TARGET_NAME="json_tree_test" TEST_CLASS="PetTreeItemTests" TEST_METHOD="TakeChild" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -337,11 +364,19 @@
       <item itemvalue="Application.gmock_main" />
       <item itemvalue="Application.gtest" />
       <item itemvalue="Application.gtest_main" />
-      <item itemvalue="Google Test.PetTreeItemTests.RowFor1Child" />
+      <item itemvalue="Google Test.PetTreeItemTests.Children" />
+      <item itemvalue="Google Test.PetTreeItemTests.InsertChild" />
+      <item itemvalue="Google Test.PetTreeItemTests.SwapChildren" />
+      <item itemvalue="Google Test.PetTreeItemTests.TakeChild" />
+      <item itemvalue="Google Test.PetTreeItemTests.Load" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.PetTreeItemTests.RowFor1Child" />
+        <item itemvalue="Google Test.PetTreeItemTests.Load" />
+        <item itemvalue="Google Test.PetTreeItemTests.TakeChild" />
+        <item itemvalue="Google Test.PetTreeItemTests.SwapChildren" />
+        <item itemvalue="Google Test.PetTreeItemTests.InsertChild" />
+        <item itemvalue="Google Test.PetTreeItemTests.Children" />
       </list>
     </recent_temporary>
   </component>
@@ -356,23 +391,51 @@
       <option name="presentableId" value="Default" />
       <updated>1551502547265</updated>
       <workItem from="1551502560785" duration="48666000" />
-      <workItem from="1551632542308" duration="14020000" />
+      <workItem from="1551632542308" duration="17487000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PetTreeItemTests_RowFor1Child - 2019.03.03 at 15h 59m 42s.xml">
-      <configuration name="PetTreeItemTests.RowFor1Child" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="PetTreeItemTests_InsertChild - 2019.03.03 at 16h 28m 28s.xml">
+      <configuration name="PetTreeItemTests.InsertChild" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_SwapChildren - 2019.03.03 at 16h 30m 40s.xml">
+      <configuration name="PetTreeItemTests.SwapChildren" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_SwapChildren - 2019.03.03 at 16h 32m 21s.xml">
+      <configuration name="PetTreeItemTests.SwapChildren" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_TakeChild - 2019.03.03 at 16h 35m 36s.xml">
+      <configuration name="PetTreeItemTests.TakeChild" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_TakeChild - 2019.03.03 at 16h 36m 43s.xml">
+      <configuration name="PetTreeItemTests.TakeChild" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 51m 56s.xml">
+      <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 55m 12s.xml">
+      <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 56m 44s.xml">
+      <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 57m 39s.xml">
+      <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PetTreeItemTests_Load - 2019.03.03 at 16h 58m 11s.xml">
+      <configuration name="PetTreeItemTests.Load" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62686000" />
+    <option name="totallyTimeSpent" value="66153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24640805" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24640805" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.32855093" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32998565" />
@@ -573,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/qt5/QtCore/qlist.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="120" column="6" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/treemodel.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -597,16 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="199" column="42" selection-start-line="199" selection-start-column="42" selection-end-line="199" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -617,42 +663,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt.gtest">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/qt5/QtCore/qlist.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="15">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-src/googletest/src/gtest.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2425" selection-start-line="2425" selection-end-line="2425" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/4.8.2/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pet_tree_item.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pet_tree_model.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="429" column="68" selection-start-line="429" selection-start-column="35" selection-end-line="429" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pet_tree_item.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="137">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pet_tree_item.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="30" column="85" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+        <state relative-caret-position="216">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt.gtest">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

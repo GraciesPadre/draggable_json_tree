@@ -1,6 +1,8 @@
 #include "gtest/gtest.h"
 #include "pet_tree_item.h"
-#include <QString>
+#include <QFile>
+#include <QtCore/QJsonDocument>
+#include <QtCore/QJsonObject>
 
 TEST(PetTreeItemTests, Add1Child) {
     PetTreeItem hiddenRootItem;
@@ -26,21 +28,86 @@ TEST(PetTreeItemTests, RowFor1Child) {
     ASSERT_TRUE(hiddenRootItem.rowOfChild(firstChild) == 0);
 }
 
-/*
- * PetTreeItem* parent() const { return m_parent; }
-    PetTreeItem* childAt(int row) const { return m_children.value(row); }
-    int rowOfChild(PetTreeItem *child) const { return m_children.indexOf(child); }
-    bool hasChildren() const { return ! m_children.isEmpty(); }
-    int childCount() const { return m_children.count(); }
-    QList<PetTreeItem*> children() const { return m_children; }
+TEST(PetTreeItemTests, HasChildren) {
+    PetTreeItem hiddenRootItem;
 
-    void insertChild(int row, PetTreeItem *item) { item->m_parent = this; m_children.insert(row, item); }
-    void addChild(PetTreeItem *item) { item->m_parent = this; m_children << item; }
-    void swapChildren(int oldRow, int newRow) { m_children.swap(oldRow, newRow); }
-    PetTreeItem* takeChild(int row);
+    new PetTreeItem(&hiddenRootItem);
 
-    static PetTreeItem* load(const QJsonValue& value, PetTreeItem *parent = nullptr);
- */
+    ASSERT_TRUE(hiddenRootItem.hasChildren() == true);
+}
+
+TEST(PetTreeItemTests, ChildCount) {
+    PetTreeItem hiddenRootItem;
+
+    new PetTreeItem(&hiddenRootItem);
+
+    ASSERT_TRUE(hiddenRootItem.childCount() == 1);
+}
+
+TEST(PetTreeItemTests, Children) {
+    PetTreeItem hiddenRootItem;
+
+    auto firstChild = new PetTreeItem(&hiddenRootItem);
+
+    auto children = hiddenRootItem.children();
+
+    ASSERT_TRUE(children.count() == 1);
+
+    for (auto child : children) {
+        ASSERT_TRUE(child == firstChild);
+    }
+}
+
+TEST(PetTreeItemTests, SwapChildren) {
+    PetTreeItem hiddenRootItem;
+
+    auto firstChild = new PetTreeItem(&hiddenRootItem, "first");
+    auto secondChild = new PetTreeItem(&hiddenRootItem, "second");
+
+    ASSERT_TRUE(hiddenRootItem.childCount() == 2);
+
+    hiddenRootItem.swapChildren(1,0);
+
+    ASSERT_TRUE(hiddenRootItem.childAt(0) == secondChild);
+    ASSERT_TRUE(hiddenRootItem.childAt(1) == firstChild);
+}
+
+TEST(PetTreeItemTests, TakeChild) {
+    PetTreeItem hiddenRootItem;
+
+    auto firstChild = new PetTreeItem(&hiddenRootItem, "first");
+    auto secondChild = new PetTreeItem(&hiddenRootItem, "second");
+
+    auto removedChild = hiddenRootItem.takeChild(0);
+
+    ASSERT_TRUE(removedChild == firstChild);
+    ASSERT_TRUE(hiddenRootItem.childAt(0) == secondChild);
+}
+
+TEST(PetTreeItemTests, Load) {
+    QFile file("/tmp/simple_tree.json");
+    ASSERT_TRUE(file.open(QIODevice::ReadOnly));
+
+    struct FileFinalizer {
+        QFile &m_file;
+
+        explicit FileFinalizer(QFile &file) : m_file(file) {}
+        ~FileFinalizer() { m_file.close(); }
+    } fileFinalizer(file);
+
+    auto const& jsonDocument = QJsonDocument::fromJson(file.readAll());
+
+    ASSERT_FALSE(jsonDocument.isEmpty());
+    ASSERT_FALSE(jsonDocument.isNull());
+
+    auto rootItem = PetTreeItem::load(QJsonValue(jsonDocument.object()));
+
+    ASSERT_TRUE(rootItem->childCount() == 2);
+    ASSERT_TRUE(rootItem->childAt(0)->childCount() == 2);
+    ASSERT_TRUE(rootItem->childAt(1)->childCount() == 3);
+    ASSERT_TRUE(rootItem->childAt(2) == nullptr);
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

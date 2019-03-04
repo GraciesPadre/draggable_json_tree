@@ -38,13 +38,10 @@ project(json_tree)
 project(json_tree_test)
 
 set(CMAKE_CXX_STANDARD 11)
-
 set(CMAKE_BUILD_TYPE Debug)
-
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_PREFIX_PATH "/usr/lib64/qt5/mkspecs/features/data/cmake")
 
